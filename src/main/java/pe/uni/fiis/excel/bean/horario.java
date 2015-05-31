@@ -1,0 +1,175 @@
+package pe.uni.fiis.excel.bean;
+
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Workbook;
+import sun.util.calendar.BaseCalendar;
+
+import java.io.FileOutputStream;
+
+/**
+ * Created by lazaroguerra on 31/05/2015.
+ */
+public class horario {
+    public static void main(String[] args) {
+        Workbook wb= new HSSFWorkbook();
+        Sheet hoja1=  wb.createSheet("texto1.xls");
+        Cell celda1= hoja1.createRow(0).createCell(0);
+        Cell celda2=hoja1.createRow(0).createCell(1);
+        Cell celda3=hoja1.createRow(1).createCell(0);
+        Cell celda4=hoja1.createRow(1).createCell(1);
+        Cell celda5=hoja1.createRow(2).createCell(0);
+        Cell celda6=hoja1.createRow(2).createCell(1);
+        Cell celda7=hoja1.createRow(3).createCell(0);
+        Cell celda8=hoja1.createRow(3).createCell(1);
+        Cell celda9=hoja1.createRow(3).createCell(2);
+        Cell celda10=hoja1.createRow(3).createCell(3);
+        Cell celda11=hoja1.createRow(3).createCell(4);
+        Cell celda12=hoja1.createRow(4).createCell(0);
+        Cell celda13=hoja1.createRow(4).createCell(1);
+        Cell celda14=hoja1.createRow(4).createCell(2);
+        Cell celda15=hoja1.createRow(4).createCell(3);
+        Cell celda16=hoja1.createRow(4).createCell(4);
+        Cell celda17=hoja1.createRow(5).createCell(0);
+        Cell celda18=hoja1.createRow(5).createCell(1);
+        Cell celda19=hoja1.createRow(5).createCell(2);
+        Cell celda20=hoja1.createRow(5).createCell(3);
+        Cell celda21=hoja1.createRow(5).createCell(4);
+        Cell celda22=hoja1.createRow(6).createCell(0);
+        Cell celda23=hoja1.createRow(6).createCell(1);
+        Cell celda24=hoja1.createRow(6).createCell(2);
+        Cell celda25=hoja1.createRow(6).createCell(3);
+        Cell celda26=hoja1.createRow(6).createCell(4);
+        Cell celda27=hoja1.createRow(7).createCell(0);
+        Cell celda28=hoja1.createRow(7).createCell(1);
+        Cell celda29=hoja1.createRow(7).createCell(2);
+        Cell celda30=hoja1.createRow(7).createCell(3);
+        Cell celda31=hoja1.createRow(7).createCell(4);
+        Cell celda32=hoja1.createRow(8).createCell(0);
+        Cell celda33=hoja1.createRow(8).createCell(1);
+        Cell celda34=hoja1.createRow(8).createCell(2);
+        Cell celda35=hoja1.createRow(8).createCell(3);
+        Cell celda36=hoja1.createRow(8).createCell(4);
+        celda1.setCellValue("LIMA");
+        celda2.setCellValue("PARTIDAS");
+        celda3.setCellValue("FECHA:");
+        celda4.setCellValue("Dom 31-may-2015");
+        celda5.setCellValue("AEROPUERTO");
+        celda6.setCellValue("J.C.I. Airpot");
+        celda7.setCellValue("Vuelo");
+        celda8.setCellValue("Transporte");
+        celda9.setCellValue("Destino");
+        celda10.setCellValue("Partida");
+        celda11.setCellValue("Estado");
+        celda12.setCellValue("W4 1373");
+        celda13.setCellValue("LC Peru");
+        celda14.setCellValue("Jauja");
+        celda15.setCellValue("3:15 PM");
+        celda16.setCellValue("Programado");
+        celda17.setCellValue("LA 2276");
+        celda18.setCellValue("LAN Airlines");
+        celda19.setCellValue("Cuzco");
+        celda20.setCellValue("3:15 PM");
+        celda21.setCellValue("En Ruta");
+        celda22.setCellValue("IB 4908");
+        celda23.setCellValue("Iberia");
+        celda24.setCellValue("Cuzco");
+        celda25.setCellValue("3:15 PM");
+        celda26.setCellValue("En Ruta");
+        celda27.setCellValue("LA 2276");
+        celda28.setCellValue("LAN Airlines");
+        celda29.setCellValue("Chiclayo");
+        celda30.setCellValue("3:25 PM");
+        celda31.setCellValue("Programado");
+        celda32.setCellValue("AM 8094");
+        celda33.setCellValue("Aeromexico");
+        celda34.setCellValue("Chiclayo");
+        celda35.setCellValue("3:25 PM");
+        celda36.setCellValue("Programado");
+
+        Sheet hoja2=wb.createSheet("Texto2.xls");
+        Cell celdaA1=hoja2.createRow(0).createCell(0);
+        Cell celdaA2=hoja2.createRow(0).createCell(1);
+        Cell celdaA3=hoja2.createRow(1).createCell(0);
+        Cell celdaA4=hoja2.createRow(1).createCell(1);
+        Cell celdaA5=hoja2.createRow(2).createCell(0);
+        Cell celdaA6=hoja2.createRow(2).createCell(1);
+        Cell celdaA7=hoja2.createRow(3).createCell(0);
+        Cell celdaA8=hoja2.createRow(3).createCell(1);
+        Cell celdaA9=hoja2.createRow(3).createCell(2);
+        Cell celdaA10=hoja2.createRow(3).createCell(3);
+        Cell celdaA11=hoja2.createRow(3).createCell(4);
+        Cell celdaA12=hoja2.createRow(4).createCell(0);
+        Cell celdaA13=hoja2.createRow(4).createCell(1);
+        Cell celdaA14=hoja2.createRow(4).createCell(2);
+        Cell celdaA15=hoja2.createRow(4).createCell(3);
+        Cell celdaA16=hoja2.createRow(4).createCell(4);
+        Cell celdaA17=hoja2.createRow(5).createCell(0);
+        Cell celdaA18=hoja2.createRow(5).createCell(1);
+        Cell celdaA19=hoja2.createRow(5).createCell(2);
+        Cell celdaA20=hoja2.createRow(5).createCell(3);
+        Cell celdaA21=hoja2.createRow(5).createCell(4);
+        Cell celdaA22=hoja2.createRow(6).createCell(0);
+        Cell celdaA23=hoja2.createRow(6).createCell(1);
+        Cell celdaA24=hoja2.createRow(6).createCell(2);
+        Cell celdaA25=hoja2.createRow(6).createCell(3);
+        Cell celdaA26=hoja2.createRow(6).createCell(4);
+        Cell celdaA27=hoja2.createRow(7).createCell(0);
+        Cell celdaA28=hoja2.createRow(7).createCell(1);
+        Cell celdaA29=hoja2.createRow(7).createCell(2);
+        Cell celdaA30=hoja2.createRow(7).createCell(3);
+        Cell celdaA31=hoja2.createRow(7).createCell(4);
+        Cell celdaA32=hoja2.createRow(8).createCell(0);
+        Cell celdaA33=hoja2.createRow(8).createCell(1);
+        Cell celdaA34=hoja2.createRow(8).createCell(2);
+        Cell celdaA35=hoja2.createRow(8).createCell(3);
+        Cell celdaA36=hoja2.createRow(8).createCell(4);
+
+        celdaA1.setCellValue("LIMA");
+        celdaA2.setCellValue("LLEGADAS");
+        celdaA3.setCellValue("FECHA:");
+        celdaA4.setCellValue("Dom 31-may-2015");
+        celdaA5.setCellValue("AEROPUERTO");
+        celdaA6.setCellValue("J.C.I. Airpot");
+        celdaA7.setCellValue("Vuelo");
+        celdaA8.setCellValue("Transporte");
+        celdaA9.setCellValue("Destino");
+        celdaA10.setCellValue("Partida");
+        celdaA11.setCellValue("Estado");
+        celdaA12.setCellValue("LA 2941");
+        celdaA13.setCellValue("LAN Airlines");
+        celdaA14.setCellValue("Cuzco");
+        celdaA15.setCellValue("3:15 PM");
+        celdaA16.setCellValue("Programado");
+        celdaA17.setCellValue("LA 2255");
+        celdaA18.setCellValue("LAN Airlines");
+        celdaA19.setCellValue("Tarapoto");
+        celdaA20.setCellValue("3:25 PM");
+        celdaA21.setCellValue("Aterrizo");
+        celdaA22.setCellValue("IB 4905");
+        celdaA23.setCellValue("Iberia");
+        celdaA24.setCellValue("Tarapoto");
+        celdaA25.setCellValue("3:25 PM");
+        celdaA26.setCellValue("Aterrizo");
+        celdaA27.setCellValue("LA 2331");
+        celdaA28.setCellValue("LAN Airlines");
+        celdaA29.setCellValue("Tumbes");
+        celdaA30.setCellValue("3:25 PM");
+        celdaA31.setCellValue("Aterrizo");
+        celdaA32.setCellValue("LA 2076");
+        celdaA33.setCellValue("LAN Airlines");
+        celdaA34.setCellValue("Cuzco");
+        celdaA35.setCellValue("3:40 PM");
+        celdaA36.setCellValue("Aterrizo");
+
+        try{
+            FileOutputStream output= new FileOutputStream("mision.xls");
+            wb.write(output);
+            output.close();
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+}
